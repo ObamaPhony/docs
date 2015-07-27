@@ -14,10 +14,13 @@
 {
     "data": [
         {
-            "sentence": "Thank you, thank you, we all hate the republicans."
+            "sentence": "Thank you, thank you, we all hate the republicans.",
             "summary": "republicans",
             "prev_summary": "thank you",
-            "position": 0.7,
+            OR
+            "summary": [ "hate", "republicans" ]
+            "prev_summary": [ "thank you", "thank you" ]
+            "position": 0.7
         },
         {
             ...
@@ -29,7 +32,7 @@
 * Speech generation/interface:
   * 'Topic' word(s) are input to base the speech around. (TODO: just 1, or
     more?)
-  * Speech length is input
+  * Wanted speech length is input
   * For each sentence:
     * The wanted sentence has some variables set:
     ```
@@ -49,3 +52,9 @@
     * Multiple sentences are generated/ripped by relevance (current speech
       position, previous summary, wanted summary)
       * e.g. the first sentence will often be the wanted summary
+
+* Summary algorithm:
+  * Remove common words:
+    * articles: "the", "a"
+    * "all"
+    * pronouns (?)
