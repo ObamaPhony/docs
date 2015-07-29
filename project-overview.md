@@ -1,10 +1,48 @@
 Project overview
 ================
 
+Program flow
+------------
+
+  1. Gather **speech collections** for speaker(s)
+  2. Send to **API**
+  3. **API** sends each **speaker** separately to the **sentence analyser**
+     which returns information about each sentence in each speech
+  4. Information is stored for each speaker
+       * Could cache this if we end up restarting the server a *lot* -- however
+         it's meant to be a 'long-life' process
+  5. API is prepared for requests
+  6. User enters information
+       1. User selects a speaker
+       2. User selects speech length
+       3. User enters a **noun** (TODO: multiple?) (TODO: could show example
+          nouns from Google Trends)
+  7. For each sentence, API sends to the **relevance calculator**:
+       * the full **speaker**
+       * the current **position** (between 0 and 1)
+       * the word to use (for that paragraph)
+       * the previous summary
+  8.
+
+
+Relevance algorithm
+-------------------
+
+  1. Compares arguments (see above) to each **speaker sentence**, i.e. check
+     how close current position is to the position of the current speaker
+     sentence, how many of the summary words are identical
+  2. Generate a 'relevance' metric for that sentence
+  3. Return the sentence index with its relevance
+
+
 Parts
 -----
 
 ### Speech database
+
+####
+
+
 #### Downloading
 #### Sorting
 ### Analysis
