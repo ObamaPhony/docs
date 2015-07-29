@@ -14,4 +14,6 @@ Paragraphs
   * We replace a **random word** in each sentence with a random **topic word**.
   * The user selects one of the supplied sentences.
   * The rest of the paragraph is processed, with random nouns being replaced
-    with the topic word (and possibly other topic words as well).
+    with the topic word.
+    * There could be a small chance that the word is replaced by a different
+      topic word instead.
