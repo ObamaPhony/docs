@@ -4,7 +4,7 @@
 * OPTIONAL: We then generate a special intro paragraph to make it sound more
   like the speaker we're using. Not sure if we want this or if it will be
   useful.
-* For each topic word, we generate **one paragraph**.
+* For each topic word, we generate **one/two/? paragraph(s)**.
 
 Paragraphs
 ----------
