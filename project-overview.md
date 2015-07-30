@@ -1,6 +1,29 @@
 Project overview
 ================
 
+Description
+-----------
+
+### 1 sentence
+
+Generates a speech about chosen words in the style of a chosen speaker using
+paragraphs from their previous speeches.
+
+
+### Long
+
+The user picks a number of topic words
+
+
+Parts
+-----
+
+  * **Saleem:** Node server
+  * **Dominic:** Go API
+  * **Ben:** Python analysis program
+  * **PG:** VB scraping program
+
+
 Program flow
 ------------
 
@@ -24,15 +47,7 @@ Program flow
        * the previous summary
   8.
 
-
-Relevance algorithm
--------------------
-
-  1. Compares arguments (see above) to each **speaker sentence**, i.e. check
-     how close current position is to the position of the current speaker
-     sentence, how many of the summary words are identical
-  2. Generate a 'relevance' metric for that sentence
-  3. Return the sentence index with its relevance
+  1. 
 
 
 Parts
