@@ -63,10 +63,13 @@ Program flow
        * the current **position** (between 0 and 1)
        * the word to use (for that paragraph)
        * the previous summary
-  8.
+
+ayy lmao
 
   1. **Node.js server** starts up
-  2. **Node** looks for a speech cache
+  2. **Node** looks for a *speech cache*
+       * If not present, **Node** calls the **scraping program** and saves the
+         speeches into the *speech cache*
   3. **VB scraping program**, passes it to the **API**
   3. **API** 
 
