@@ -15,16 +15,28 @@
       [
         "sentence": "ayy lmao",
         "summary": [
-          "ayy",
-          "lmao"
+         [
+            "ayy",
+            "NNP"
+         ],
+         [
+            "lmao",
+            "RB"
+         ]
         ],
         "position": 0.332
       ],
       [
         "sentence": "ayy lmao",
         "summary": [
-          "ayy",
-          "lmao"
+         [
+            "ayy",
+            "NNP"
+         ],
+         [
+            "lmao",
+            "RB"
+         }
         ],
         "position": 0.332
       ]
