@@ -1,24 +1,42 @@
-Project overview
-================
+If Obama Wrote a Speech About...
+================================
+
+Project name
+------------
+
+Project name: If Obama Wrote a Speech About...
+
+As a program, we should refer to it as a 'speech generator', optional 'Obama'
+prefix.
+
+
+Group members
+-------------
+
+  * Ben Orchard
+  * Patrick Geragersian
+  * Dominic Rodriguez
+  * Saleem Rashid
+
 
 Description
 -----------
 
-### 1 sentence
+### 1 sentence / Flashy
+
+Generate a speech about a topic in the style of Obama.
+
+
+### Long
 
 Generates a speech about chosen words in the style of a chosen speaker using
 paragraphs from their previous speeches.
 
 
-### Long
-
-The user picks a number of topic words
-
-
 Parts
 -----
 
-  * **Saleem:** Node server
+  * **Saleem:** Node.js server
   * **Dominic:** Go API
   * **Ben:** Python analysis program
   * **PG:** VB scraping program
@@ -47,7 +65,10 @@ Program flow
        * the previous summary
   8.
 
-  1. 
+  1. **Node.js server** starts up
+  2. **Node** looks for a speech cache
+  3. **VB scraping program**, passes it to the **API**
+  3. **API** 
 
 
 Parts
