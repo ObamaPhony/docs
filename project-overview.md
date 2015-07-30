@@ -22,15 +22,20 @@ Group members
 Description
 -----------
 
-### 1 sentence / Flashy
+### Tagline / Intro
 
 Generate a speech about a topic in the style of Obama.
 
 
 ### Long
 
-Generates a speech about chosen words in the style of a chosen speaker using
-paragraphs from their previous speeches.
+The project's aim is to generate a unique (though perhaps questionably original)
+speech using a corpus of speeches by a specific speaker. We began with the idea
+to use Barack Obama, but any speaker could be used, providing you have a large
+enough collection of correctly-formatted speeches.
+
+Generates a speech about chosen topic words using paragraphs from their previous
+speeches.
 
 
 Parts
