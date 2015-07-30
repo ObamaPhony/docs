@@ -53,6 +53,9 @@ Program flow
   4. **API** sends speeches to the **analysis program**
   5. **API** stores returned analysed speeches
        * TODO: in memory/database/file?
+  6. Ready for requests
+  7. User inputs a number of *topic words* (maybe suggested 3?)
+  8. User hits
 
 
 Old flow
