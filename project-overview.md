@@ -45,6 +45,19 @@ Parts
 Program flow
 ------------
 
+  1. **Node.js server** starts up
+  2. **Node** looks for a *speech cache*
+       * If not present, **Node** calls the **scraping program** and saves the
+         speeches into the *speech cache*
+  3. **VB scraping program**, passes it to the **API**
+  4. **API** sends speeches to the **analysis program**
+  5. **API** stores returned analysed speeches
+       * TODO: in memory/database/file?
+
+
+Old flow
+--------
+
   1. Gather **speech collections** for speaker(s)
   2. Send to **API**
   3. **API** sends each **speaker** separately to the **sentence analyser**
@@ -63,15 +76,6 @@ Program flow
        * the current **position** (between 0 and 1)
        * the word to use (for that paragraph)
        * the previous summary
-
-ayy lmao
-
-  1. **Node.js server** starts up
-  2. **Node** looks for a *speech cache*
-       * If not present, **Node** calls the **scraping program** and saves the
-         speeches into the *speech cache*
-  3. **VB scraping program**, passes it to the **API**
-  3. **API** 
 
 
 Parts
