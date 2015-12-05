@@ -11,5 +11,6 @@ The routes of the RESTful API is as follows, assuming it starts after 'http://se
 
 Route ID|Description|Callback
 --------|-----------|--------
-/speechgen/speeches|This is a route for the API which returns a JSON object containing a list of Speeches we have cached already. This is called with a HTTP POST request.|Possibly a k:v store with a list of speeches we have cached
-/speechgen
+/speechgen/speeches|This is a route for the API which returns a JSON object containing a list of Speeches we have cached already. This is called with a HTTP POST request.|Possibly a k:v store with a list of speeches cached, or a MongoDB store which is easier to access.
+/speechgen/genspeech/{speech_id}|This a route for the API which calls the Python speech-analysis module, asynchronously, so the server doesn't hang during execution. It takes an ID from the speeches route previously mentioned. 
+/speechgen/retrieve/{speech_id}
