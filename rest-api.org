@@ -3,3 +3,8 @@
 #+AUTHOR: Dom Rodriguez
 
 * REST API
+** Endpoints
+   | Endpoint | Verb | Action |
+   | /        |      |        |
+   |          |      |        |
+   |          |      |        |
