@@ -8,7 +8,4 @@ Endpoints
   Endpoint   Verb   Action
   /                 
                     
-                    
   ---------- ------ --------
-
-
